@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de arreglos</title>
+</head>
+<body>
+    <h1>En este documento trataremos con push, pop y splice</h1>
+    <script>
+        var arr = ["a", "b", "c"];
+        console.log(arr);
+
+        //agregar elemento(s) al final -> push
+        arr.push(1, 2, "d");
+        console.log(arr);
+
+        //remover el ultimo elemento -> pop
+        arr.pop();
+        arr.pop();
+        console.log(arr);
+
+        var arr2 = [0, 1, 2, 3, 4];
+        console.log(arr2);
+
+        //Agregar o eliminar elementos en la posicion que querramos -> splice
+        //el primer digito es la posicion del arreglo en donde nos ubicaremos
+
+        //en caso de agregar elementos debemos completar con 0 el segundo digito
+        arr2.splice(1, 0, "a", "b", "c");
+        console.log(arr2);
+
+        //en caso de eliminar elementos debemos completar con el numero de elementos a borrar
+        arr2.splice(2, 2);
+        console.log(arr2);
+
+        //tambien podemos tener nuestro desde el final, para esto es importante saber que los elementos empiezan desde -1
+        arr2.splice(-2, 0, 'd', 'e', 'f');
+        console.log(arr2);
+
+        arr2.splice(-5, 2);
+        console.log(arr2);
+
+    </script>
+</body>
+</html>
